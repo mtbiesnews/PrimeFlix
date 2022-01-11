@@ -1,0 +1,582 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rcloud.business.fragment.BusineesProfileFrag.ServiceOnTimeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:padding="6dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="Save"/>
+
+
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_slab"
+
+                android:hint="Case Id"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal"
+                android:textColor="@color/grey"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service mode"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_rect"
+
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/spinner_servicemode"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call recevied"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/statedate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:hint="Recevied date"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+                    <EditText
+                        android:id="@+id/enddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Recevied time"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call log in time"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/statedate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:hint="Log in date"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+                    <EditText
+                        android:id="@+id/enddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Log in time"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated time Arrival "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/statedate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:hint="Arrival date"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+                    <EditText
+                        android:id="@+id/enddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Arrival time"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Actual arrival time "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/statedate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:hint="Arrival date"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+                    <EditText
+                        android:id="@+id/enddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Arrival time"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call closure time "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/statedate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:hint="Closure date"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+                    <EditText
+                        android:id="@+id/enddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Closure time"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Time"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/statedate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:hint="Payment date"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+                    <EditText
+                        android:id="@+id/enddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Payment time"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment mode"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_rect"
+
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/spinner_paymode"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_slab"
+
+                android:textStyle="normal"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/statedate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:hint="Service title"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/enddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Service fram"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_slab"
+                android:hint="Service Task"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal"
+                android:textColor="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plan Type"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_rect"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spinner_plantype"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service Status"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_rect"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spinner_servicesttus"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

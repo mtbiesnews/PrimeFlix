@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:text="Save"
+                android:layout_alignParentRight="true"/>
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:backgroundTint="@color/grey"
+                android:background="@drawable/ic_baseline_close_24">
+            </ImageView>
+            <TextView
+                android:id="@+id/toolbar_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add experience"
+                android:textSize="16sp"
+                android:layout_toLeftOf="@+id/save"
+                android:layout_toRightOf="@+id/back"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_slab"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp">
+            </TextView>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/title"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab"
+                android:textColorHint="@color/grey"
+                android:hint="Title*"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spinner"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"/>
+
+
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/comapnyname"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab"
+                android:textColorHint="@color/grey"
+                android:hint="Company name"/>
+
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/location"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab"
+                android:textColorHint="@color/grey"
+                android:hint="Location"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

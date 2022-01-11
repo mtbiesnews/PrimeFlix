@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/call"
+        android:title="Call"
+        android:icon="@drawable/ic_ab_call"/>
+
+    <item
+        android:id="@+id/network"
+        android:icon="@drawable/group"
+        android:title="Network" />
+
+    <item
+        android:id="@+id/message"
+        android:icon="@android:drawable/stat_notify_chat"
+        android:title="Message" />
+
+    <item
+        android:id="@+id/bank"
+        android:icon="@drawable/banner"
+        android:title="Bank" />
+
+    <item
+        android:id="@+id/media"
+        android:icon="@drawable/ic_media_play"
+        android:title="Media" />
+</menu>

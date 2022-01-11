@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rcloud.business.fragment.AboutFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="6dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/tvBio"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Bio"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/etBio"
+            android:fontFamily="@font/roboto_slab"
+            app:layout_constraintTop_toBottomOf="@id/tvBio"
+            android:lines="3"
+            android:inputType="textCapSentences"
+            android:hint="Enter your bio"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tvOcc"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Occupation"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner android:layout_height="45dp"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/button_round"
+        android:id="@+id/spinnerOccupation"
+        android:fontFamily="@font/roboto_slab"
+        app:layout_constraintTop_toBottomOf="@id/tvOcc"
+        android:lines="3"
+        android:inputType="textCapSentences"
+        android:entries="@array/occupations"
+        android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tvIncome"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Annual Income"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner android:layout_height="45dp"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/spinnerIncome"
+        android:background="@drawable/button_round"
+        android:fontFamily="@font/roboto_slab"
+        app:layout_constraintTop_toBottomOf="@id/tvIncome"
+        android:lines="3"
+        android:inputType="textCapSentences"
+        android:entries="@array/income"
+        android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:orientation="vertical"
+        android:layout_marginRight="6dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/tvWeight"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Weight"
+            android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/etEieght"
+        android:fontFamily="@font/roboto_slab"
+        app:layout_constraintTop_toBottomOf="@id/tvWeight"
+        android:lines="3"
+        android:inputType="textCapSentences"
+        android:hint="Enter your weight"
+        android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tvBodyType"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Body Type"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerBodyType"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_round"
+        android:entries="@array/bodyType"
+        android:fontFamily="@font/roboto_slab"
+        android:inputType="textCapSentences"
+        android:lines="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBodyType" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:orientation="vertical"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="15dp">
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tvComplexion"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Complexion"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerComplexion"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/complexion"
+        android:fontFamily="@font/roboto_slab"
+        android:inputType="textCapSentences"
+        android:lines="3"
+        android:background="@drawable/button_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvComplexion" />
+    </LinearLayout>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/view_profile"
+            android:checked="false"
+            android:icon="@drawable/ic_account_circle"
+            android:title="@string/viewProfile" />
+
+        <item
+            android:id="@+id/business"
+            android:checked="false"
+            android:icon="@drawable/report_arrow_chart_business_graph_stock_data_png_icon_free_166051"
+            android:title="@string/businessProfile" />
+
+        <item
+            android:id="@+id/jobs"
+            android:checked="false"
+            android:icon="@drawable/ic_job"
+            android:title="@string/jobs" />
+
+        <item
+            android:id="@+id/artist"
+            android:checked="false"
+            android:icon="@drawable/ic_artist"
+            android:title="@string/artist"/>
+
+        <item
+            android:id="@+id/matrimonial"
+            android:checked="false"
+            android:icon="@drawable/ic_matimonial"
+            android:title="@string/matrimonial"/>
+        <item
+            android:id="@+id/events"
+            android:icon="@drawable/ic_event"
+            android:checked="false"
+            android:title="@string/events" />
+        <item
+            android:id="@+id/entertainment"
+            android:icon="@drawable/ic_entertainment"
+            android:checked="false"
+            android:title="@string/entertainment"/>
+
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/ic_location"
+            android:checked="false"
+            android:title="Location"/>
+
+
+    </group>
+</menu>

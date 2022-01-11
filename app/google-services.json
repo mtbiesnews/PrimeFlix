@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1000048819895",
+    "project_id": "prime-flix-448fb",
+    "storage_bucket": "prime-flix-448fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000048819895:android:12e289c2dab929620a9732",
+        "android_client_info": {
+          "package_name": "com.rcloud.netflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000048819895-acgphl8drp8r8b0rs3q8sf0nkfipli0r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rcloud.netflix",
+            "certificate_hash": "e5a37f678f9c3be8da426befb63e8aa273448f67"
+          }
+        },
+        {
+          "client_id": "1000048819895-o3sb725uir7ah90ls0cr44psk1opa1m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqoVHoxzWdMf5Xth4CPmnYcRzItEAmQsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000048819895-o3sb725uir7ah90ls0cr44psk1opa1m4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

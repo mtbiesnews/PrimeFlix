@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:iconTint="@color/black"
+        android:title="@string/search_title"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ic_notifications_none_black_24dp"
+        android:iconTint="@color/black"
+        android:title="@string/notification"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/ic_chat"
+        android:iconTint="@color/black"
+        android:title="@string/notification"
+        app:showAsAction="always" />
+</menu>

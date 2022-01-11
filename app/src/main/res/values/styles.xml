@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/black</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
+
+</style>
+    <style name="SwitchCompatStyle" >
+        <item name="thumbTint">@color/switch_thumbTint</item>
+        <item name="trackTint">@color/switch_trackTint</item>
+    </style>
+
+    <style name="ThemeSwipeBack" parent="Theme.Swipe.Back">
+        <item name="colorPrimary">#db4336</item>
+        <item name="colorPrimaryDark">#b63120</item>
+    </style>
+
+    <style name="YellowCheck">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <style name="cursorColor" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textCursorDrawable">@drawable/cursor_white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Color1SwitchStyle">
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+    <style name="MiniControllerTextAppearace" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+    <style name="fullViewTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DatePickerDialog" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:buttonTint">@color/grey</item>
+        <item name="android:buttonBarButtonStyle">@style/Widget.AppCompat.Button.Colored</item>
+        <item name="android:positiveButtonText">Ok</item>
+        <item name="android:negativeButtonText">Cancel</item>
+
+        <item name="colorAccent">@color/grey</item>
+    </style>
+
+    <style name="shape_image">
+        <item name="cornerSizeTopRight">55dp</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeBottomLeft">55dp</item>
+        <item name="cornerSizeTopLeft">70dp</item>
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSizeBottomRight">73dp</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+        <item name="cornerSize">95dp</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+<!--    <style name="NavigationTheme" parent="AppTheme">-->
+<!--        <item name="listPreferredItemHeightSmall">200dp</item>-->
+<!--    </style>-->
+</resources>

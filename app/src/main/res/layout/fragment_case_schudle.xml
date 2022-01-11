@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rcloud.business.fragment.BusineesProfileFrag.CaseSchudleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:padding="6dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="Save"/>
+
+
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_slab"
+
+                android:hint="Case Id"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal"
+                android:textColor="@color/grey"/>
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_slab"
+
+                android:hint="Case Title"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal"
+                android:textColor="@color/grey"/>
+            <EditText
+                android:id="@+id/venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_slab"
+                android:hint="Brand Name"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal"
+                android:textColor="@color/grey"/>
+
+
+            <EditText
+                android:id="@+id/venue"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_slab"
+
+                android:hint="Case Descripation"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal"
+                android:textColor="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Case mode"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_rect"
+
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/spinner_casemode"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/statedate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:hint="Start date*"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/enddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="End date*"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/statedate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:hint="Start Time*"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/enddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="End time*"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_slab"
+                android:hint="InCharge Name"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal"
+                android:textColor="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Case Status"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_rect"
+
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/spinner_casestatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context="com.rcloud.business.fragment.FamilyFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Bio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextPostalAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Father’s Occupation"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress" />
+
+        <Spinner
+            android:id="@+id/spinnerFatherOcc"
+            android:entries="@array/occupationFamily"
+            app:layout_constraintStart_toStartOf="@id/textView22"
+            app:layout_constraintTop_toBottomOf="@id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Mother’s Occupation"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerFatherOcc" />
+
+        <Spinner
+            android:id="@+id/spinnerMotherOcc"
+            android:entries="@array/occupationFamily"
+            app:layout_constraintStart_toStartOf="@id/textView22"
+            app:layout_constraintTop_toBottomOf="@id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Brother"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerMotherOcc" />
+
+        <Spinner
+            android:id="@+id/spinnerBro"
+            android:entries="@array/familyCount"
+            app:layout_constraintStart_toStartOf="@id/textView22"
+            app:layout_constraintTop_toBottomOf="@id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Sister"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerBro" />
+
+        <Spinner
+            android:id="@+id/spinnerSis"
+            android:entries="@array/familyCount"
+            app:layout_constraintStart_toStartOf="@id/textView22"
+            app:layout_constraintTop_toBottomOf="@id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Family type"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSis" />
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:entries="@array/familyType"
+            app:layout_constraintStart_toStartOf="@id/textView22"
+            app:layout_constraintTop_toBottomOf="@id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Family status"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerType" />
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:entries="@array/familyStatus"
+            app:layout_constraintStart_toStartOf="@id/textView22"
+            app:layout_constraintTop_toBottomOf="@id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Family income"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerStatus" />
+
+        <Spinner
+            android:id="@+id/spinnerIncome"
+            android:entries="@array/income"
+            app:layout_constraintStart_toStartOf="@id/textView22"
+            app:layout_constraintTop_toBottomOf="@id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Family values"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerIncome" />
+
+        <Spinner
+            android:id="@+id/spinnerValues"
+            android:entries="@array/familyValues"
+            app:layout_constraintStart_toStartOf="@id/textView22"
+            app:layout_constraintTop_toBottomOf="@id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Living with parents?"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerValues" />
+
+        <Spinner
+            android:id="@+id/spinnerLiving"
+            android:entries="@array/living"
+            app:layout_constraintStart_toStartOf="@id/textView22"
+            app:layout_constraintTop_toBottomOf="@id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Add a family member"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinnerLiving" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

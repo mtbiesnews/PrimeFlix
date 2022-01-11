@@ -1,0 +1,313 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rcloud.business.fragment.BusineesProfileFrag.AboutFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:padding="6dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="Save"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_baseline_location_on_24"/>
+
+
+                <TextView
+                    android:id="@+id/tvAlert"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Your Current location"
+                    android:layout_toRightOf="@+id/back"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/roboto_slab"
+
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"/>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="L2, 53, Sector H, Sector-A, Aliganj, Lucknow, Uttar Pradesh 226024"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grey"
+                android:layout_height="1dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:id="@+id/rl_self"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_baseline_edit_24"/>
+
+
+                <TextView
+                    android:id="@+id/tvself"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Manually"
+                    android:layout_toRightOf="@+id/back"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/roboto_slab"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"/>
+
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="13dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:id="@+id/ll_address"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="Service Area"
+                        android:layout_toRightOf="@+id/back"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/roboto_slab"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_rect"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:id="@+id/spinner_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_rect"
+
+                            android:layout_height="wrap_content">
+                            <Spinner
+                                android:id="@+id/spinner_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/grey"
+                            android:layout_height="45dp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_rect"
+
+                            android:layout_height="wrap_content">
+                            <Spinner
+                                android:id="@+id/spinner_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+                    <EditText
+                        android:id="@+id/area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="true"
+                        android:focusable="true"
+                        android:layout_marginTop="10dp"
+                        android:hint="Area"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="true"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:background="@color/white"
+                        android:hint="Working hours"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:layout_gravity="center_vertical"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+                    <View
+                        android:layout_width="1dp"
+                        android:background="@color/grey"
+                        android:layout_height="45dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_rect"
+
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:id="@+id/spinner_hourtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact info"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:textStyle="normal"
+                        android:textColor="@color/black"/>
+                    <EditText
+                        android:id="@+id/contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:hint="eg. Mobile or Email"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/grey"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Service Type"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/roboto_slab"
+
+                        android:textStyle="normal"
+                        android:textColor="@color/black"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/back_rect"
+
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:id="@+id/spinner_servicetype"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

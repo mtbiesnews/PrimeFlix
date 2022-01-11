@@ -1,0 +1,203 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.11.0, 0.99.99]'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+        vectorDrawables.useSupportLibrary = true
+
+        applicationId "com.rcloud.netflix"
+
+        manifestPlaceholders = [onesignal_app_id               : "cd6a92d4-12c9-4692-bc90-3397c652e739",
+                                onesignal_google_project_number: "REMOTE"]
+
+        minSdkVersion 19
+        targetSdkVersion 30
+        buildToolsVersion "30.0.2"
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//        javaCompileOptions {
+//            annotationProcessorOptions {
+//                includeCompileClasspath false
+//            }
+//        }
+    }
+    repositories {
+        mavenCentral()
+        maven { url "https://s3-ap-southeast-1.amazonaws.com/godel-release/godel/" }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', "PURCHASE_CODE", PURCHASE_CODE
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', "PURCHASE_CODE", PURCHASE_CODE
+        }
+    }
+
+    buildFeatures {
+        dataBinding true
+
+    }
+    buildTypes.each {
+        it.buildConfigField 'String', 'server_url', server_url
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'javax.annotation:javax.annotation-api:1.3.2'
+
+    implementation 'com.github.rajan6533:Netflixlibjar:1.8'
+    implementation 'ai.devsupport.instamojo:instamojolib:0.1.6'
+
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:8.0.1'
+
+    implementation 'androidx.browser:browser:1.3.0'
+    implementation 'androidx.exifinterface:exifinterface:1.3.2'
+    implementation 'androidx.media:media:1.3.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.4.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.google.android.gms:play-services-ads:20.2.0'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-analytics:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.onesignal:OneSignal:[3.9.1, 3.99.99]'
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3@aar'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+    implementation project(':library')
+    implementation 'com.mobsandgeeks:android-saripaar:2.0.2'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+//    implementation project(':bettervideoplayer')
+    implementation 'com.github.halilozercan:BetterVideoPlayer:kotlin-SNAPSHOT'
+
+
+    implementation('com.paytm:pgplussdk:1.3.3') {
+        transitive = true
+    }
+
+    implementation 'com.braintreepayments.api:braintree:2.22.0'
+    implementation 'com.braintreepayments.api:drop-in:3.7.1'
+
+    implementation 'com.mani:ThinDownloadManager:1.4.0'
+    implementation 'com.github.lzyzsd:circleprogress:1.2.1'
+
+//    implementation 'com.google.android.exoplayer:exoplayer:r2.5.2'
+    implementation 'com.leo.simplearcloader:simplearcloader:1.0.3'
+
+    implementation 'com.gauravk.bubblenavigation:bubblenavigation:1.0.7'
+
+    implementation 'com.github.joielechong:countrycodepicker:2.3.3'
+
+    // Required Dependency by Audience Network SDK
+    implementation 'com.facebook.android:audience-network-sdk:5.6.0'
+
+    implementation 'com.razorpay:checkout:1.5.16'
+
+    //new
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'androidx.mediarouter:mediarouter:1.2.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.14.1'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.14.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.14.1'
+
+    implementation 'com.google.android.gms:play-services-cast:20.0.0'
+    implementation 'com.google.android.gms:play-services-cast-framework:20.0.0'
+
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation "com.github.skydoves:elasticviews:2.0.5"
+    implementation 'com.github.Drjacky:ImagePicker:1.8.4'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation "org.alfonz:alfonz-utility:0.9.1"
+    implementation "org.alfonz:alfonz-view:0.9.1"
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-core:19.0.1'
+        // Import the BoM for the Firebase platform
+        implementation platform('com.google.firebase:firebase-bom:28.4.0')
+
+        // Declare the dependency for the Firebase Authentication library
+        // When using the BoM, you don't specify versions in Firebase library dependencies
+        implementation 'com.google.firebase:firebase-auth'
+        implementation 'jp.wasabeef:glide-transformations:4.1.0'
+        // Also declare the dependency for the Google Play services library and specify its version
+        implementation 'com.google.android.gms:play-services-auth:19.2.0'
+
+//    //Paykun
+//    implementation 'com.paykun.sdk:paykun-checkout-lib:1.1.13'
+//
+//    //Traknpay
+//    implementation project(':PGSDKVR4')
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.google.ar.sceneform:filament-android:1.17.1'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    testImplementation 'junit:junit:4.12'
+
+
+
+    //Google Play Services for Maps
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+
+    // Google play services for location information
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+
+    //adding search bar for using places api
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.2'
+
+    //places api dependency
+    implementation 'com.google.android.libraries.places:places:2.5.0'
+
+    //Adding ripple background for animation
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    //temp
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'

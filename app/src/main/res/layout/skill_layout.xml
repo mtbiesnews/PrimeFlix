@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:backgroundTint="@color/black"
+                    android:background="@drawable/ic_baseline_close_24"/>
+
+
+                <TextView
+                    android:id="@+id/tvAlert"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Add Skill"
+                    android:layout_toRightOf="@+id/back"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_slab"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="28dp"
+                    android:text="Save"/>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grey"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+
+
+                <EditText
+                    android:id="@+id/skill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="true"
+                    android:focusable="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_slab"
+                    android:hint="Skill(ex: Android developer)"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="you can add 50 more skills"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/grey"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="Suggested skills based off your profile:"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_slab"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

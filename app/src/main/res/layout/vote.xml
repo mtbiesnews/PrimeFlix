@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rcloud.business.Vote">
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rcloud.business.Vote">
+-->
+    <ImageView
+        android:id="@+id/amazon"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="68dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/amazon_icon"/>
+      <!--  app:layout_constraintEnd_toStartOf="@+id/google"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"-->
+
+   <!-- <ImageView
+        android:id="@+id/google"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/google_icon" />
+-->
+   <!-- <ImageView
+        android:id="@+id/you"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginStart="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/ms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amazon"
+        app:layout_constraintVertical_bias="0.574"
+        app:srcCompat="@drawable/youtube_logo_2431" />
+-->
+   <!-- <ImageView
+        android:id="@+id/link"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/git"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toEndOf="@+id/you"
+        app:srcCompat="@drawable/linkedin_icon" />
+-->
+   <!-- <ImageView
+        android:id="@+id/ms"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="152dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/git"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/microsoft_icon" />
+-->
+   <!-- <ImageView
+        android:id="@+id/git"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="152dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/submit"
+        app:srcCompat="@drawable/github" />
+-->
+   <!-- <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:text="DONE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+-->
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,272 @@
+<resources>
+    <string name="app_name">MTBIES Entertainment</string>
+    <string name="start">Start</string>
+    <string name="close">Close</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <!-- <string name="google_app_id">1:1000048819895:android:12e289c2dab929620a9732</string>-->
+    <string name="tag_line">Flix Premium video App</string>
+
+    <string name="gmap_api_key">AIzaSyBLzCmtOL3wkgaerlQIMfC2-q1Rit10JfA</string>
+    <integer name="google_play_services_version">12451000</integer>
+
+    <!--Drawer Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_latest">New On Flix</string>
+    <string name="menu_category">Category</string>
+    <string name="menu_favorite">Favorites</string>
+    <string name="menu_download">Downloads</string>
+    <string name="menu_share">Share App</string>
+    <string name="menu_rate">Rate App</string>
+    <string name="menu_more">More App</string>
+    <string name="menu_about">About Us</string>
+    <string name="menu_privacy">Privacy Policy</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_businessprofile">Business Profile</string>
+    <string name="menu_giftvoucher">Redeem Gift Vouchers</string>
+    <string name="menu_earn">Refer &amp; Earn</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_video">Video</string>
+    <string name="menu_setting">Settings</string>
+
+    <!-- home title -->
+    <string name="latest_video">New On Flix</string>
+    <string name="all_video">All Videos</string>
+    <string name="recent_video">Recent Videos</string>
+    <string name="latest_category">Category</string>
+    <string name="more_btn">See All</string>
+    <string name="total_video">Videos</string>
+    <string name="total_category">Categories</string>
+
+    <string name="description_title">Description :-</string>
+    <string name="related_video">Similar Videos</string>
+    <string name="comment_video">Comment</string>
+    <string name="comment_view_all">See All</string>
+    <string name="comment_view_no">No comment found !!</string>
+    <string name="leave_comment">Leave comment</string>
+    <string name="loading">Loading...</string>
+    <string name="logout_msg">Are you sure you want logout ?</string>
+    <string name="login_require">Please Login First...</string>
+    <string name="search_title">Search</string>
+    <string name="notification">Notifications</string>
+    <string name="no_search">No search found !!</string>
+    <string name="notification_title">Enable Push Notification</string>
+
+    <string name="no_data">No video found.</string>
+    <string name="favourite_add">Favourite has been saved</string>
+    <string name="favourite_remove">Favourite has been removed</string>
+    <string name="pop_favourite_add">Add to favorite</string>
+    <string name="pop_favourite_remove">Removed from favorite</string>
+    <string name="no_video">No video found !!</string>
+    <string name="no_cat">No Category found !!</string>
+    <string name="no_fav">No favorite found !!</string>
+    <string name="share_msg">Download it from Google Play Store Free Here \n https://play.google.com/store/apps/details?id=</string>
+
+    <!-- more application for play store -->
+    <string name="play_more_apps">https://play.google.com/store/apps/developer?id=Android+Apps</string>
+
+    <!-- about us -->
+    <string name="version">Version</string>
+    <string name="company">Company</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="contact">Contact</string>
+    <string name="about">About</string>
+
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_remember">Remember Me</string>
+    <string name="login">Login</string>
+    <string name="login_skip">Skip</string>
+    <string name="login_register">Register</string>
+    <string name="login_update">Update</string>
+    <string name="forgot_submit">Submit</string>
+    <string name="forgot_title">Forgot Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="dont_account">Don"&apos;"t have an account ?</string>
+    <string name="login_signup">Signup</string>
+    <string name="sign_up_name">Name</string>
+    <string name="sign_up_phone">Phone</string>
+    <string name="already_account_sign_in">Already have an account Yet?</string>
+    <string name="your_profile_update">Your Profile Updated</string>
+    <string name="error_title">Opps.</string>
+    <string name="error_login_failed">Admin disable your login rights</string>
+    <string name="comment_require">Comment require..</string>
+    <string name="pip_mode">PIP Mode</string>
+    <string name="pip_not_support">Your device PIP mode not support require oreo(8.0) version</string>
+
+    <!-- youtube -->
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="youtube_api_key">AIzaSyB6JrL-dpWgAYyo8rg22hHx77deKF58Ihw</string>
+
+    <!--if you want rtl change value of isRTL to true else false-->
+    <string name="isRTL">false</string>
+
+    <string name="exit_msg">Are You Sure You Want To Close App?</string>
+    <string name="exit_yes">Yes</string>
+    <string name="exit_no">No</string>
+    <string name="subcription">Premium Plans</string>
+    <string name="giftvoucher">Redeem Gift Vouchers</string>
+    <string name="referandearn">Refer &amp; Earn</string>
+    <string name="plantitle">Exclusive Shows,\nWatch All Premium Content,\nUnlimited Entertainment</string>
+    <string name="payment">Payment</string>
+    <string name="login_gg_text">Login With Google</string>
+
+    <string name="shareSub">share</string>
+    <string name="downloadfolder">primevideoflix</string>
+
+    <array name="colors_load">
+        <item>@color/pinkPrimary</item>
+        <item>@color/white</item>
+    </array>
+
+    <!--Advance webview-->
+    <string name="global_network_offline">No Internet connection available</string>
+
+    <string name="placeholder_empty">Not found</string>
+    <string name="placeholder_offline">No Internet connection available</string>
+    <string name="skip"><u>Skip</u></string>
+
+    <string name="vo_te">Vote</string>
+
+    <string-array name="occupations">
+        <item>Civil</item>
+        <item>Government Sector</item>
+        <item>Public Sector</item>
+        <item>Defence</item>
+        <item>Private</item>
+        <item>Agriculture</item>
+        <item>Business</item>
+        <item>Self Employed</item>
+        <item>Student</item>
+        <item>Not working</item>
+    </string-array>
+    <string-array name="income">
+        <item>No Income</item>
+        <item>0-1 Lakh</item>
+        <item>2-3 Lakh</item>
+        <item>4-6 Lakh</item>
+        <item>7-11 Lakh</item>
+        <item>12-18 Lakh</item>
+        <item>20-26 Lakh</item>
+        <item>27-36 Lakh</item>
+        <item>40-60 Lakh</item>
+        <item>65-1 Cr.</item>
+        <item>1Cr &amp; Above</item>
+    </string-array>
+    <string-array name="job_type">
+        <item>Part-time</item>
+        <item>Full-time</item>
+    </string-array>
+
+    <string-array name="salary">
+        <item>Below 5000 INR</item>
+        <item>5000-10000 INR</item>
+        <item>10000-20000 INR</item>
+        <item>20000-30000 INR</item>
+        <item>30000-40000 INR</item>
+        <item>40000-50000 INR</item>
+        <item>Above 50000 INR</item>
+    </string-array>
+    <string-array name="bodyType">
+        <item>Heavy</item>
+        <item>Athletic</item>
+        <item>Average</item>
+        <item>Slim</item>
+    </string-array>
+
+    <string-array name="complexion">
+        <item>Dark</item>
+        <item>Wheatish Brown</item>
+        <item>Wheatish</item>
+        <item>Fair</item>
+        <item>Very Fair</item>
+    </string-array>
+
+    <string-array name="diets">
+        <item>Vegetarian</item>
+        <item>Non Vegetarian</item>
+        <item>Eggetarian</item>
+    </string-array>
+
+
+    <string-array name="options">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Occasionally</item>
+    </string-array>
+
+    <string-array name="optionstwo">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="occupationFamily">
+        <item>Service-Private</item>
+        <item>Service-Govt./PSU</item>
+        <item>Civil</item>
+        <item>Army/Armed Forces</item>
+        <item>Business/Entrepreneur</item>
+        <item>Retired</item>
+        <item>Not Employed</item>
+        <item>Expired</item>
+    </string-array>
+
+    <string-array name="familyCount">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3+</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="familyType">
+        <item>Joint Family</item>
+        <item>Nuclear Family</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="familyStatus">
+        <item>Middle Class</item>
+        <item>Upper Middle Class</item>
+        <item>Rich/Affluent</item>
+    </string-array>
+
+    <string-array name="familyValues">
+        <item>Moderate</item>
+        <item>Conservative</item>
+        <item>Liberal</item>
+        <item>Orthodox</item>
+    </string-array>
+
+
+    <string-array name="living">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Not Applicable</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="headline">headline</string>
+
+    <string name="viewProfile">User Profile</string>
+    <string name="businessProfile">Business Profile</string>
+    <string name="jobs">Jobs</string>
+    <string name="artist">Artist</string>
+    <string name="matrimonial">Matrimonial</string>
+    <string name="events">Events</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="next_">Next</string>
+    <string name="appsLoginWelcome">Welcome to MTBIES Entertainment</string>
+    <string name="loginWithEmailUserNameNumber">Login with UserName / Email / Mobile number</string>
+    <string name="emailUserNameNumber">Email / UserName / Mobile No. </string>
+    <string name="userNameCannotBeBlank">UserId cannot be blank</string>
+    <string name="passwordCannotBeBlank">Password cannot be blank</string>
+    <string name="check">Check</string>
+    <string name="userName">UserName</string>
+    <string name="business">Business</string>
+    <string name="news">News</string>
+    <string name="sport">Sport</string>
+
+</resources>

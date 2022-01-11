@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rcloud.business.fragment.BusineesProfileFrag.VideosFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="30dp"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:padding="6dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="Save"/>
+
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_slab"
+                android:hint="Video Title"
+                android:layout_marginTop="15dp"
+                android:textStyle="normal"
+                android:textColor="@color/grey"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_image_24"/>
+
+            </RelativeLayout>
+            <VideoView
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
