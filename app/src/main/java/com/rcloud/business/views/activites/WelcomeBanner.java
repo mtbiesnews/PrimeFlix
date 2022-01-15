@@ -22,6 +22,7 @@ import com.rcloud.netflix.MainActivity;
 import com.rcloud.netflix.R;
 import com.rcloud.netflix.databinding.ActivityMtbiesLoginBinding;
 import com.rjesture.activities.Dashboard;
+import com.rjesture.activities.Login;
 import com.rjesture.activities.SignUp;
 
 /**
@@ -52,14 +53,15 @@ public class WelcomeBanner extends BaseActivity<ActivityMtbiesLoginBinding> {
     private void setListeners() {
         dataBinding.btnLogin.setOnClickListener(v -> {
 //            startActivity(new Intent(this, ActivitySignIn.class));
-            startActivity(new Intent(this, SignUp.class));
+            startActivity(new Intent(this, Login.class));
         });
         dataBinding.btnSignUp.setOnClickListener(v -> {
-            startActivity(new Intent(this, Dashboard.class));
+            startActivity(new Intent(this, SignUp.class));
 //            startActivity(new Intent(this, ActivitySignUp.class));
         });
         dataBinding.tvSkip.setOnClickListener(v -> {
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, Dashboard.class));
+//            startActivity(new Intent(this, MainActivity.class));
         });
 
         viewPagerPageChangeListener = new ViewPager.OnPageChangeListener() {

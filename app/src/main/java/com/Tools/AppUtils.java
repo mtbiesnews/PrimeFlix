@@ -3,8 +3,10 @@ package com.Tools;
 import android.content.Context;
 import android.util.Log;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -21,6 +23,7 @@ public class AppUtils {
         Toast.makeText(context, message, Toast.LENGTH_LONG).show();
     }
 
+
     public static void showLog(String title, String message) {
         Log.v(title, "Message:  " + message);
     }
@@ -34,8 +37,16 @@ public class AppUtils {
         showToast(context, "Exception Error");
     }
 
+    public static String getEtText(TextInputEditText editText) {
+        return editText.getText().toString().trim();
+    }
+
     public static String getEtText(EditText editText) {
         return editText.getText().toString().trim();
+    }
+
+    public static String getEtText(TextView textView) {
+        return textView.getText().toString().trim();
     }
 
     public static JSONObject makeJsonObjectFromPojo(Object object, Context context) {
@@ -55,5 +66,12 @@ public class AppUtils {
         Gson gson = new Gson();
 //        Student max = gson.fromJson(maxJson, Student.class);
     }
+
+    public static void showEditTextError(EditText editText, Context mContext, String message) {
+        editText.setError(message);
+        showToast(mContext,message);
+    }
+
+
 
 }

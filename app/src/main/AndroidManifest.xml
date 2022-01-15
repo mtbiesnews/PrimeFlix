@@ -53,6 +53,15 @@
         tools:replace="android:icon,android:roundIcon"
         tools:targetApi="n">
         <activity
+            android:name="com.rjesture.activities.OtpVerification"
+            android:exported="false" />
+        <activity
+            android:name="com.rjesture.activities.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name="com.rjesture.activities.Login"
+            android:exported="false" />
+        <activity
             android:name="com.rjesture.activities.SignUp"
             android:exported="false" />
         <activity

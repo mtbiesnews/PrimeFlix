@@ -261,12 +261,39 @@
     <string name="appsLoginWelcome">Welcome to MTBIES Entertainment</string>
     <string name="loginWithEmailUserNameNumber">Login with UserName / Email / Mobile number</string>
     <string name="emailUserNameNumber">Email / UserName / Mobile No. </string>
-    <string name="userNameCannotBeBlank">UserId cannot be blank</string>
+    <string name="userNameCannotBeBlank">UserName cannot be blank</string>
+    <string name="loginIdCannotBeBlank">LoginId cannot be blank</string>
     <string name="passwordCannotBeBlank">Password cannot be blank</string>
     <string name="check">Check</string>
     <string name="userName">UserName</string>
     <string name="business">Business</string>
     <string name="news">News</string>
     <string name="sport">Sport</string>
+    <string name="userNameAvailable">This username is available</string>
+    <string name="userNameUnAvailable">This username is already taken</string>
+    <string name="userNameCanBeAlphanumeric">Username can only contains alphabets and numbers</string>
+    <string name="userNameLengthError">Username must be of minimum 5 characters</string>
+    <string name="nameCannotBeBlank">Name cannot be blank</string>
+    <string name="emailIsInvalid">Email is invalid</string>
+    <string name="userNameIsNotValidated">Username is not validated</string>
+    <string name="mobileNumberIsInvalid">Mobile number is invalid</string>
+    <string name="dateCannotBeBlank">Date of birth cannot be blank</string>
+    <string name="passwordLengthError">Password must be of minimum eight characters</string>
+    <string name="registerationSuccessful">Registeration is successful</string>
+    <string name="sign_in">Sign In</string>
+    <string name="promo_code_optional">Promo Code (Optional)</string>
+    <string name="companyHandle">\@mtbies</string>
+    <string name="enterReferalCode">Enter the promo code</string>
+    <string name="enterYourEmailOrMobileNumber">Enter your email or mobile number to recieve an otp.</string>
+    <string name="emailNumber">Email / Mobile number</string>
+    <string name="sendOtp">Send Otp</string>
 
 </resources>
+
+
+
+
+
+
+
+

@@ -7,5 +7,6 @@ public class AppUrls {
     public static String BaseUrl ="https://mtbiesnews.co.uk/mtbiesnews/";
     public static String Users=BaseUrl+"User/";
     public static String checkUserNameUrl=Users+"Check_username";
+    public static String signUpUrl=Users+"u_signup";
 
 }
