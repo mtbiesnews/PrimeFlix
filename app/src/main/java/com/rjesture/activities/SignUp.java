@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.CompoundButton;
 
 import com.Tools.ApiStrings;
 import com.rcloud.base.BaseActivity;
@@ -195,7 +196,7 @@ public class SignUp extends BaseActivity<ActivitySignupBinding> {
                     loadingDialog(mContext);
                     try {
                         ApiService apiService = RetroClass.getApiService();
-                        apiService.signUpUser(userNameText,
+                        apiService.signUpUser(getEtText(dataBinding.etUserName),
                                 getEtText(dataBinding.etPhone),
                                 getEtText(dataBinding.etPassword),
                                 getEtText(dataBinding.etName),
@@ -223,7 +224,6 @@ public class SignUp extends BaseActivity<ActivitySignupBinding> {
 */
                                     }
                                 }
-                                response.message();
                             }
 
                             @Override
@@ -261,6 +261,17 @@ public class SignUp extends BaseActivity<ActivitySignupBinding> {
             }
 
         });
+        dataBinding.cbReferal.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    dataBinding.tilReferal.setVisibility(View.VISIBLE);
+                }else {
+                    dataBinding.tifReferal.setText("");
+                    dataBinding.tilReferal.setVisibility(View.GONE);
+                }
+            }
+        });
 
     }
 
@@ -288,6 +299,8 @@ public class SignUp extends BaseActivity<ActivitySignupBinding> {
             showEditTextError(dataBinding.etPassword, mContext, getResources().getString(R.string.passwordCannotBeBlank));
         } else if (getEtText(dataBinding.etPassword).length()<8) {
             showEditTextError(dataBinding.etPassword, mContext, getResources().getString(R.string.passwordLengthError));
+        }else if(dataBinding.cbReferal.isChecked() && getEtText(dataBinding.tifReferal).isEmpty()){
+            showEditTextError(dataBinding.tifReferal, mContext, getResources().getString(R.string.enterReferalCode));
         } else {
             return true;
         }

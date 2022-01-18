@@ -53,6 +53,9 @@
         tools:replace="android:icon,android:roundIcon"
         tools:targetApi="n">
         <activity
+            android:name="com.rjesture.activities.GeneratePassword"
+            android:exported="false" />
+        <activity
             android:name="com.rjesture.activities.OtpVerification"
             android:exported="false" />
         <activity

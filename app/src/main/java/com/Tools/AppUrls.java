@@ -8,5 +8,6 @@ public class AppUrls {
     public static String Users=BaseUrl+"User/";
     public static String checkUserNameUrl=Users+"Check_username";
     public static String signUpUrl=Users+"u_signup";
+    public static String signInUrl=Users+"u_signinpassword";
 
 }

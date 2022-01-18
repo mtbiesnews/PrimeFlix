@@ -24,5 +24,9 @@ public interface ApiService {
                                        @Field("name") String name,
                                        @Field("email") String email,
                                        @Field("dob") String dob);
+    @FormUrlEncoded
+    @POST("User/u_signinpassword")
+    Call<DefaultResponse> signInUser(@Field("user_phone") String userName,
+                                       @Field("password") String password);
 
 }

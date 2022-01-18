@@ -285,8 +285,21 @@
     <string name="companyHandle">\@mtbies</string>
     <string name="enterReferalCode">Enter the promo code</string>
     <string name="enterYourEmailOrMobileNumber">Enter your email or mobile number to recieve an otp.</string>
+    <string name="enterYourMobileNumber">Enter your mobile number to recieve an otp.</string>
     <string name="emailNumber">Email / Mobile number</string>
     <string name="sendOtp">Send Otp</string>
+    <string name="verify_otp">Verify Otp</string>
+    <string name="enterTheOtpSendToYourMobileEmail">Enter the code send to your registered mail or mobile number</string>
+    <string name="otp">Otp</string>
+    <string name="verify_mobileNumber">Verify your mobile number</string>
+    <string name="didntRecieveTheCode">Didn\'t recieved the code yet?</string>
+    <string name="resend">Resend</string>
+    <string name="enterNewPassword">Enter new password</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="generateNewPassword">Generate new password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="passwordMismatch">Password mismatch</string>
 
 </resources>
 

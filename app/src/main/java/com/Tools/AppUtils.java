@@ -49,6 +49,10 @@ public class AppUtils {
         return textView.getText().toString().trim();
     }
 
+    public static String getColoredSpanned(String text, String color) {
+        return "<font color=" + color + ">" + text + "</font>";
+    }
+
     public static JSONObject makeJsonObjectFromPojo(Object object, Context context) {
         JSONObject jsonObject = new JSONObject();
         try {

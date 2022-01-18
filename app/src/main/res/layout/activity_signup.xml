@@ -307,6 +307,63 @@
 
 
                 <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_referal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli"
+                        android:text="I have Referral PromoCode " />
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1.0dip"
+                    android:id="@+id/til_referal"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tif_referal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:fontFamily="@font/muli"
+                        android:hint="@string/promo_code_optional"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        android:paddingStart="7.0dip"
+                        android:textSize="13sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/bt_register"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white_login_square"
+                    android:onClick="@{(v)->signUpPresenter.registerUser()}"
+                    android:text="@string/login_register"
+                    android:textColor="@color/login_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
                     android:id="@+id/ll_signIn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -349,19 +406,6 @@
                 </LinearLayout>
 
 
-                <Button
-                    android:id="@+id/bt_register"
-                    android:layout_width="130dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white_login_square"
-                    android:onClick="@{(v)->signUpPresenter.registerUser()}"
-                    android:text="@string/login_register"
-                    android:textColor="@color/login_text"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/tv_response"
