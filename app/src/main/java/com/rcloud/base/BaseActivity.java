@@ -20,3 +20,22 @@ public abstract class BaseActivity<DB extends ViewDataBinding> extends AppCompat
         dataBinding = DataBindingUtil.setContentView(this, getLayoutResId());
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

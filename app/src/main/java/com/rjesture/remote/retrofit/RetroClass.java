@@ -9,8 +9,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetroClass {
 
     private static Retrofit retrofit;
-
-    public static String BaseUrl ="https://mtbiesnews.co.uk/mtbiesnews/";
+//    public static String BaseUrl ="https://mtbiesnews.co.uk/mtbiesnews/";
+    public static String BaseUrl ="https://login.diosm.com/api/";
 
     public static Retrofit getRetrofitInstance() {
         if (retrofit == null) {

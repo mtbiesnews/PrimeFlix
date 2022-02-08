@@ -65,35 +65,36 @@ public class Login extends BaseActivity<ActivityLoginBinding> {
                             @Override
                             public void onResponse(Call<DefaultResponse> call, Response<DefaultResponse> response) {
                                 loadingDismiss(mContext);
-                                showApiLog(apiJson, makeJsonObjectFromPojo(response.raw().request().body(), mContext).toString());
-                                if (response.body() != null) {
+                                showApiLog(apiJson, response.toString());
+                                  showApiLog(apiJson, makeJsonObjectFromPojo(response.body(), mContext).toString());
+               /*                 if (response.body() != null) {
                                     DefaultResponse defaultResponse = response.body();
                                     showApiLog(apiResponse, makeJsonObjectFromPojo(response.body(), mContext).toString());
                                     if (defaultResponse.getStatus().toString().equalsIgnoreCase("true")) {
                                         showToast(mContext, defaultResponse.getMessage());
-/*
+*//*
                                         showToast(mContext,getResources().getString(R.string.registerationSuccessful));
                                         startActivity(new Intent(mContext, ActivitySignIn.class));
                                         finish();
-*/
-                                        /*    dataBinding.tvResponse.setText(makeJsonObjectFromPojo(defaultResponse,
+*//*
+                                        *//*    dataBinding.tvResponse.setText(makeJsonObjectFromPojo(defaultResponse,
                                                 mContext).toString());
-                                    */
+                                    *//*
                                     } else if (defaultResponse.getMessage().equalsIgnoreCase("Your mobile is not verifed.")) {
                                         showToast(mContext, defaultResponse.getMessage());
                                         startActivity(new Intent(mContext, ForgotPassword.class).putExtra(pagePath,"loginVerify"));
                                         finish();
 
-                                        /*
+                                        *//*
                                         dataBinding.etName.setText(defaultResponse.getMessage());
                                         dataBinding.tvUserName.setText();
-*/
+*//*
                                     }else {
                                         showToast(mContext,defaultResponse.getMessage());
                                     }
 
                                 }
-                            }
+             */               }
 
                             @Override
                             public void onFailure(Call<DefaultResponse> call, Throwable t) {
